@@ -11,9 +11,13 @@
   --primary-font:'Roboto', sans-serif;
 }
 
-h1,h2,h3,p {margin-top: 0; margin-bottom: ;}
+h1,h2,h3,p {
+margin-top: 0px; margin-bottom: 0px;}
 
-ul {margin-top: 0; margin-bottom: 0; padding-left: 0;}
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  padding-left: 0px;}
 
 .list {
   list-style: none;
@@ -37,6 +41,12 @@ background-color: var(--color-body);}
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.section-padding {
+padding-top: 120px;
+padding-bottom: 120px;}
+
+.section-padding-top {padding-top: 120px;}
 
 .page-heder {padding-top: 24px;
 padding-bottom: 24px;}
@@ -100,7 +110,7 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: var(--color-body);
 cursor: pointer;
-
+min-width: 105px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: transparent;
@@ -115,12 +125,15 @@ color: var(--color-body);
 
 .hero {background-color: var(--color-navy-blue-overlay-shadow-heading)}
 
-.hero {
+.hero-one {
+width: 496px;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
+color: var(--color-body);
+padding-top: 188px;
 text-align: center;
-color: var(--color-body)}
+}
 
 
 .second-head {
@@ -128,7 +141,8 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
-text-transform: capitalize;}
+text-transform: capitalize;
+margin-bottom: 72px;}
 
 
 .photo-header {
@@ -136,14 +150,30 @@ text-transform: capitalize;}
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
  }
  
+ .second-list {display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+ }
+
+ .second-list-item {
+  flex-basis: calc((100% - 3*24px) / 4);
+ }
 .main-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate-text)
   }
+
+.third-list {display: flex;
+flex-wrap: wrap;
+gap: 24px;}
+
+.third-list-item {
+  flex-basis: calc((100% - 2*24px) / 3);}
 
   .logo {
 font-family: 'raleway', sans-serif;
@@ -161,18 +191,27 @@ margin-right: 76px;}
   }
 
   
-  .fourth {padding-top: 120px;
-    padding-bottom: 120px;
+  .fourth {
     background-color: var(--color-cloud-accent)}
 
-  .team-list {display: flex;
-  flex-wrap: wrap;}
+.team-list {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;}
+
+.second-card-heder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+   
+.team-card {
+  flex-basis: calc((100% - 3*24px) / 4);}
   
-  .team-card:not(:nth-child(4n)) {
-    margin-right: 24px;
-  }
-  
-    .footer {
+  .footer {
     background-color: var(--color-navy-blue-overlay-shadow-heading);
   }
 
