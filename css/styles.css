@@ -115,9 +115,11 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-slate-text);
-margin-right: 40px;
 }
 
+.contact:not(:last-child){
+  margin-right: 40px;
+}
 .contact-mail-phone:hover,
 .contact-mail-phone:focus {
   color: var(--color-ocean-hover-pressed);}
@@ -149,15 +151,15 @@ color: var(--color-body);
   padding-right: 15px;
   padding-top: 188px;
   padding-bottom: 188px;
-text-align: center;}
+  text-align: center;}
 
 
 .hero {
-  background-color: var(--color-navy-blue-overlay-shadow-heading); 
+  background-color: var(--color-navy-blue-overlay-shadow-heading);
 }
 
 .hero-one {
-width: 496px;
+width: 500px;
 margin-right: auto;
 margin-left: auto;
 padding-bottom: 48px;
